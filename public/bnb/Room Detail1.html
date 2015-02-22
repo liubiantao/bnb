@@ -34,7 +34,8 @@
                 <p align="center">
                     We have four guest bedrooms all decorated to a very high standard and furnished throughout with solid pine.
                     <br /> We have wooden floors throughout the guest areas.
-                    <br/> Each room has individual controls for central heating so as to maximise your comfort while indoors.
+                    <br/> Each room has individual controls for central heating so as to maximise your comfort while indoors.<br/>
+                    Rate: 45 Euro per person
                     <br/>
                 </p>
                 <div class="rightBottom">
@@ -70,7 +71,7 @@
                                 <input size="30" type="text" name="FName" />
                             </li>
 
-                            <input type="submit" value="Make an order" />
+                            <input type="submit" onclick="alert('The form will submit')" value="Make an order" />
                         </ul>
                     </form>
                 </div>
@@ -96,10 +97,10 @@ function validate(form) {
         errors[errors.length] = "You must select Number of Room";
     }
     if (!chkInput(form.LName.value)) {
-        errors[errors.length] = "You must Lname";
+        errors[errors.length] = "You must input Last Name";
     }
     if (!chkInput(form.FName.value)) {
-        errors[errors.length] = "You must fnma";
+        errors[errors.length] = "You must input First Name";
     }
     if (errors.length > 0) {
         var msg = "There were some problems... \n";
@@ -132,5 +133,31 @@ function chkInput(input) {
     return (input.length > 0);
 }
 </script>
+
+<div class="foot">
+        <div class="footer">
+            <ul class="footerLinks">
+                <!-- navigation object : Footer Links -->
+                <li><a href="Contact Us.html">Contact Us    </a>
+                </li>
+                <li><a href="Location.html">Location    </a>
+                </li>
+                <li><a href="http://www.cork-guide.ie/corkcity.htm" target="blank">Cork-Guide    </a>
+                </li>
+                <li><a href="http://www.cork-guide.ie/blarney/index.html" target="blank">Blarney-Guide    </a>
+                </li>
+                <li><a href="http://www.travelireland.org/" target="blank">Ireland-Guide    </a>
+                </li>
+            </ul>
+            <p class="copyright">Copyright &copy Xiangfei Gao
+                <script type="text/javascript">
+                <script type="text/javascript">
+                var today = new Date();
+
+                document.write(today.toLocaleDateString());
+                </script>
+            </p>
+        </div>
+    </div>
 
 </html>

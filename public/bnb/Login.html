@@ -16,7 +16,7 @@
     	<li><a class="" href="index.html">Homepage</a></li>
         <li><a class="" href="Room.html">Room</a></li>
     	<li><a class="cur" href="Login.html">Login/Registrition</a></li>    	
-        <li style=" background:none"><a class="" href="serving.html" >Shopping Cart</a> </li> 
+        <li style=" background:none"><a class="" href="shopping cart.html" >Shopping Cart</a> </li> 
       </ul>
     </div>
 
@@ -33,11 +33,70 @@
   </form>
 </div>
 
-</body>  
+</body>
+
+<script type="text/javascript">
+function validate(form) {
+    var errors = [];
+
+    if (!chkSelcet(form.username)) {
+        errors[errors.length] = "You must enter your username";
+    }
+    if (!chkSelcet(form.password)) {
+        errors[errors.length] = "You must enter your password";
+    }
+    if (errors.length > 0) {
+        var msg = "There were some problems... \n";
+        var numError;
+        for (var i = 0; i < errors.length; i++) {
+            numError = i + 1;
+            msg += "\n" + numError + ". " + errors[i];
+        }
+        alert(msg);
+        return false;
+    }
+    setCookie(form.username.value, form.password.value);
+
+    return true;
+}
+
+function setCookie(username, password) {
+    localStorage.username = username;
+    localStorage.password = password;
+}
+
+
+
+function chkInput(input) {
+    return (input.length > 0);
+}
+</script> 
+
 <div class="foot">
-     	<div class="footer">
+        <div class="footer">
+            <ul class="footerLinks">
+                <!-- navigation object : Footer Links -->
+                <li><a href="Contact Us.html">Contact Us    </a>
+                </li>
+                <li><a href="Location.html">Location    </a>
+                </li>
+                <li><a href="http://www.cork-guide.ie/corkcity.htm" target="blank">Cork-Guide    </a>
+                </li>
+                <li><a href="http://www.cork-guide.ie/blarney/index.html" target="blank">Blarney-Guide    </a>
+                </li>
+                <li><a href="http://www.travelireland.org/" target="blank">Ireland-Guide    </a>
+                </li>
+            </ul>
+            <p class="copyright">Copyright &copy Xiangfei Gao
+                <script type="text/javascript">
+                <script type="text/javascript">
+                var today = new Date();
+
+                document.write(today.toLocaleDateString());
+                </script>
+            </p>
         </div>
-     </div>
+    </div>
  
 </body>
 </html>

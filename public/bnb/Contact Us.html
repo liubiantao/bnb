@@ -12,51 +12,37 @@
     <div class="icon">
         <img src="images/title.gif" width="330" height="120" />
     </div>
+
     <div class="nav">
         <ul>
-            <li><a class="" href="index.html">Homepage</a>
+            <li><a class="cur" href="index.html">Homepage</a>
             </li>
             <li><a class="" href="Room.html">Room</a>
             </li>
             <li><a class="" href="Login.html">Login/Registrition</a>
             </li>
-            <li style=" background:none"><a class="cur" href="shopping cart.html">Shopping Cart</a> </li>
+            <li style=" background:none"><a class="" href="shopping cart.html">Shopping Cart</a> </li>
         </ul>
     </div>
-    
-    <!--this part of code is use the cookies that I set on the shopping cart page to get customer information-->
-    <div align="center">
-        <form action="sfd.html" name="myForm" onsubmit="return validate(this);" method="post">
-            <ul>
-                <li>Number of People:
-                    <script type="text/javascript">
-                    document.write(localStorage.people + " guests will come");
-                    </script>
-                </li>
-                <br/>
-                <li> Number of Room:
-                    <script type="text/javascript">
-                    document.write(localStorage.room + " room needs");
-                    </script>
-                </li>
-                <br/>
-                <li> Last Name:
-                    <script type="text/javascript">
-                    document.write("Guest Last Name is : " + localStorage.LName);
-                    </script>
-                </li>
-                <br/>
-                <li> First Name:
-                    <script type="text/javascript">
-                    document.write("Welcome " + localStorage.FName);
-                    </script>
-                </li>
-                <br/>
 
-                <input type="submit1" value="Comfirm and Check Out" />
-            </ul>
-        </form>
-    </div>
+    <p align="center">
+           Contact:  David & Margaret Sykes<br/>
+           <br/>
+           Davmar Bed & Breakfast<br/>
+           <br/>
+           Blarney, County Cork, Ireland<br/>
+           <br/>
+           Tel:+353 (0)21 4385405<br/>
+           <br/>
+           Email: info@davmar-blarney.com<br/>
+           <br/>
+           Web: www.davmar-blarney.com<br/>
+           <br/>
+           <a href="mailto:info@davmar-blarney.com?subject=Travel Ireland Network">Email Us</a><br/>
+           <br/>
+           <a href="https://www.facebook.com/pages/Davmar-BB/193983223979812?sk=info" target="blank">Or Like Us on Facebook</a>
+    </p>
+
 
     <div class="foot">
         <div class="footer">
@@ -74,6 +60,7 @@
                 </li>
             </ul>
             <p class="copyright">Copyright &copy Xiangfei Gao
+                <script type="text/javascript">
                 <script type="text/javascript">
                 var today = new Date();
 

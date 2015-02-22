@@ -16,65 +16,145 @@
     	<li><a class="" href="index.html">Homepage</a></li>
         <li><a class="cur" href="Room.html">Room</a></li>
     	<li><a class="" href="Login.html">Login/Registrition</a></li>    	
-        <li style=" background:none"><a class="" href="Shopping.html" >Shopping Cart</a> </li> 
+        <li style=" background:none"><a class="" href="shopping cart.html" >Shopping Cart</a> </li> 
       </ul>
     </div>
      
-    <div align="center">
-     <table style="width:80%">
-  <td>
-    <tr><img src="images/bedroom3a.jpg" alt="Double Room" width="250" height="250"/></tr>
-  </td>
-     <tr><p align="center">
-   </br>
-   </br>
-   We have four guest bedrooms all decorated to a very high standard and furnished throughout with solid pine.</br>
-   We have wooden floors throughout the guest areas. <br/>
-   Each room has individual controls for central heating so as to maximise your comfort while indoors.</br>
-   </p>
-   </tr>
-     
-   <td>
-   <tr>Number of People:
-   <select>
-    <option value ="option">Select</option>
-    <option value ="1">1</option>
- 	<option value ="2">2</option>
-  	<option value ="3">3</option>
-  	<option value ="4">4</option>
-  	<option value ="5">5</option>
-  	<option value ="6">6</option>
-  	<option value ="7">7</option>
-  	<option value ="8">8</option>
-	</select>
-	</tr>
-	
-	<tr>Number of Room
-	<select>
-	<option value ="option">Select</option>
-    <option value ="1">1</option>
- 	<option value ="2">2</option>
-  	<option value ="3">3</option>
-  	<option value ="4">4</option>
-  	<option value ="5">5</option>
-	</select></tr>
-    <tr>
-	Last Name: 
-    <input size="30" type="text" name="LName" />
-    First Name: 
-    <input size="30" type="text" name="FName" />
-    <button onclick> 
-    <a href="Shopping Cart.html">make an order</a>
-    </botton>
-	</tr>
+    <div class="abc">
+
+            <div class="left">
+                <img src="images/bedroom3a.jpg" alt="Large Spacious Bedrooms" width="250" height="250" />
+            </div>
+            <div class="right">
+                <p align="center">
+                    We have four guest bedrooms all decorated to a very high standard and furnished throughout with solid pine.
+                    <br /> We have wooden floors throughout the guest areas.
+                    <br/> Each room has individual controls for central heating so as to maximise your comfort while indoors.
+                    <strong>Rate: 45 Euro per person</strong>
+                    <br/>
+                </p>
+                <div class="rightBottom">
+                    <form action="sfd.html" name="myForm" onsubmit="return validate(this);" method="post">
+                        <ul>
+                            <li>Number of People:
+                                <select name="people">
+                                    <option value="option">Select</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                </select>
+                            </li>
+                            <li> Number of Room:
+                                <select name="room">
+                                    <option value="option">Select</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </li>
+                            <li> Last Name:
+                                <input size="30" type="text" name="LName" />
+                            </li>
+                            <li> First Name:
+                                <input size="30" type="text" name="FName" />
+                            </li>
+
+                            <input type="submit" onclick="alert('The form will submit')" value="Make an order" />
+                        </ul>
+                    </form>
+                </div>
+            </div>
+
+        </div>
     </div>
-    </table>
+
+    <div class="foot">
+        <div class="footer">
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript">
+function validate(form) {
+    var errors = [];
+
+    if (!chkSelcet(form.people)) {
+        errors[errors.length] = "You must select Number of People";
+    }
+    if (!chkSelcet(form.room)) {
+        errors[errors.length] = "You must select Number of Room";
+    }
+    if (!chkInput(form.LName.value)) {
+        errors[errors.length] = "You must input Last Name";
+    }
+    if (!chkInput(form.FName.value)) {
+        errors[errors.length] = "You must input First Name";
+    }
+    if (errors.length > 0) {
+        var msg = "There were some problems... \n";
+        var numError;
+        for (var i = 0; i < errors.length; i++) {
+            numError = i + 1;
+            msg += "\n" + numError + ". " + errors[i];
+        }
+        alert(msg);
+        return false;
+    }
+    setCookie(form.people.selectedIndex, form.room.selectedIndex, form.LName.value, form.FName.value);
+
+    return true;
+}
+
+function setCookie(people, room, LName, FName) {
+    localStorage.people = people;
+    localStorage.room = room;
+    localStorage.LName = LName;
+    localStorage.FName = FName;
+}
+
+
+function chkSelcet(select) {
+    return (select.selectedIndex > 0);
+}
+
+function chkInput(input) {
+    return (input.length > 0);
+}
+</script>
 
 
      <div class="foot">
-     	<div class="footer">
+        <div class="footer">
+            <ul class="footerLinks">
+                <!-- navigation object : Footer Links -->
+                <li><a href="Contact Us.html">Contact Us    </a>
+                </li>
+                <li><a href="Location.html">Location    </a>
+                </li>
+                <li><a href="http://www.cork-guide.ie/corkcity.htm" target="blank">Cork-Guide    </a>
+                </li>
+                <li><a href="http://www.cork-guide.ie/blarney/index.html" target="blank">Blarney-Guide    </a>
+                </li>
+                <li><a href="http://www.travelireland.org/" target="blank">Ireland-Guide    </a>
+                </li>
+            </ul>
+            <p class="copyright">Copyright &copy Xiangfei Gao
+                <script type="text/javascript">
+                <script type="text/javascript">
+                var today = new Date();
+
+                document.write(today.toLocaleDateString());
+                </script>
+            </p>
         </div>
-     </div>
+    </div>
  
 </body>
 </html>
