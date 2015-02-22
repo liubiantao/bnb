@@ -468,7 +468,6 @@ input[type="submit"]:hover {
     text-align: center;
     width: 100%;
 }
-
 .footer li {
     display: inline-block;
 }
@@ -485,6 +484,6 @@ input[type="submit"]:hover {
     height: inherit;
     margin-left: 290px;
 }
-.rightBottom{
-    margin-top: 20px;   
+.rightBottom {
+    margin-top: 20px;
 }
