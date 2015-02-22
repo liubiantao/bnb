@@ -1,0 +1,136 @@
+<!DOCTYPE HTML_PUBLIC"-//w3c//DTD HTML4.01 Transactional//EN"
+"http://www.w3.org/TR/html4//loose.dtd">
+<html lang="en">
+<html>
+
+<head>
+    <link href="css1.css" rel="stylesheet" type="text/css" />
+    <title>Blaney B&amp;B Accommodation Blarney Bed & Breakfast Cork Ireland</title>
+</head>
+
+<body>
+    <div class="icon">
+        <img src="images/title.gif" width="330" height="120" />
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a class="" href="index.html">Homepage</a>
+            </li>
+            <li><a class="cur" href="Room.html">Room</a>
+            </li>
+            <li><a class="" href="Login.html">Login/Registrition</a>
+            </li>
+            <li style=" background:none"><a class="" href="shopping cart.html">Shopping Cart</a> </li>
+        </ul>
+    </div>
+    <div class="content">
+
+        <div class="abc">
+
+            <div class="left">
+                <img src="images/bedroom3b.jpg" alt="Large Spacious Bedrooms" width="250" height="250" />
+            </div>
+            <div class="right">
+                <p align="center">
+                    We have four guest bedrooms all decorated to a very high standard and furnished throughout with solid pine.
+                    <br /> We have wooden floors throughout the guest areas.
+                    <br/> Each room has individual controls for central heating so as to maximise your comfort while indoors.
+                    <br/>
+                </p>
+                <div class="rightBottom">
+                    <form action="sfd.html" name="myForm" onsubmit="return validate(this);" method="post">
+                        <ul>
+                            <li>Number of People:
+                                <select name="people">
+                                    <option value="option">Select</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                </select>
+                            </li>
+                            <li> Number of Room:
+                                <select name="room">
+                                    <option value="option">Select</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </li>
+                            <li> Last Name:
+                                <input size="30" type="text" name="LName" />
+                            </li>
+                            <li> First Name:
+                                <input size="30" type="text" name="FName" />
+                            </li>
+
+                            <input type="submit" value="Make an order" />
+                        </ul>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="foot">
+        <div class="footer">
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript">
+function validate(form) {
+    var errors = [];
+
+    if (!chkSelcet(form.people)) {
+        errors[errors.length] = "You must select Number of People";
+    }
+    if (!chkSelcet(form.room)) {
+        errors[errors.length] = "You must select Number of Room";
+    }
+    if (!chkInput(form.LName.value)) {
+        errors[errors.length] = "You must Lname";
+    }
+    if (!chkInput(form.FName.value)) {
+        errors[errors.length] = "You must fnma";
+    }
+    if (errors.length > 0) {
+        var msg = "There were some problems... \n";
+        var numError;
+        for (var i = 0; i < errors.length; i++) {
+            numError = i + 1;
+            msg += "\n" + numError + ". " + errors[i];
+        }
+        alert(msg);
+        return false;
+    }
+    setCookie(form.people.selectedIndex, form.room.selectedIndex, form.LName.value, form.FName.value);
+
+    return true;
+}
+
+function setCookie(people, room, LName, FName) {
+    localStorage.people = people;
+    localStorage.room = room;
+    localStorage.LName = LName;
+    localStorage.FName = FName;
+}
+
+
+function chkSelcet(select) {
+    return (select.selectedIndex > 0);
+}
+
+function chkInput(input) {
+    return (input.length > 0);
+}
+</script>
+
+</html>

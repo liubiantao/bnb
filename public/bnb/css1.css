@@ -1,0 +1,490 @@
+body {
+    margin: 0;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background: #f8f8f8;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, dfn {
+    border: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.content {} .fr {
+    float: right
+}
+.fl {
+    float: left
+}
+body {
+    margin: 0;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #333;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, dfn {
+    border: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+h1 {
+    font-size: 40px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+    font-size: 14px;
+}
+h3 {
+    font-size: 14px;
+    font-weight: normal;
+}
+h4 {
+    font-size: 12px;
+}
+h5 {
+    font-size: 12px;
+    font-weight: normal;
+}
+ul {} img {
+    border: 0px;
+}
+font {
+    font-size: 12px;
+}
+p.blocktext {
+    width: 500px;
+    margin: auto;
+}
+a {
+    color: #00a0de;
+    text-decoration: none;
+}
+a:hover {
+    color: #f60;
+    text-decoration: none;
+}
+dfn {
+    font-style: normal;
+    font-family: arial;
+}
+m_10 {
+    margin-bottom: 10px !important
+}
+.body {
+    background: url(images/bg.gif) 0 0 repeat-x;
+}
+.bodya {
+    background: none
+}
+.banner {
+    text-align: center;
+}
+.main {
+    width: 700px;
+    overflow: hidden;
+    float: left;
+}
+.body1 {
+    background: #fff;
+    padding-bottom: 10px;
+    overflow: auto;
+}
+.clearfloat {
+    clear: both;
+    height: 0;
+    font-size: 1px;
+    line-height: 0px;
+}
+.icon {
+    text-align: center;
+}
+.table2 {
+    text-align: center;
+}
+.nav {
+    background: #f7f7f7;
+    height: 46px;
+    line-height: 30px;
+    border-bottom: 3px solid #101580;
+    margin-bottom: 30px;
+}
+.nav ul {
+    width: 860px;
+    padding-left: 40px;
+    margin: 0 auto
+}
+.nav ul li {
+    width: 190px;
+    float: left;
+    text-align: center;
+    line-height: 46px;
+    overflow: hidden;
+    height: 46px;
+}
+.nav ul li a {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+.nav ul li a:hover, .nav ul li a.cur {
+    background-color: #f8f8f8;
+    font-weight: bold
+}
+.con {
+    margin-bottom: 10px;
+    background: #fff;
+}
+.pic1 {
+    padding: 5px;
+    width: 430px;
+    border: 1px solid #b33030;
+    float: left
+}
+.pic1 img {
+    width: 430px;
+    height: 313px
+}
+.pic3 {
+    width: 336px;
+    float: left
+}
+.pic2 {
+    padding: 5px;
+    width: 326px;
+    border: 1px solid #b33030;
+    border-left: none;
+    float: left;
+    overflow: hidden
+}
+.pic2 img {
+    width: 326px;
+    height: 151px;
+}
+.pic4 {
+    border-top: none
+}
+.con1 {
+    background: #fff;
+    line-height: 24px;
+    color: #666;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+.ibox {
+    width: 730px;
+    height: 210px;
+    background: #ddd;
+    margin: 1em auto;
+    border: 1em solid .ddd;
+    position: relative;
+    overflow: hidden
+}
+.ibox .showbox {
+    position: absolute;
+    left: 0;
+    width: 2550px;
+    height: 170px;
+    background: #fff;
+    overflow: hidden
+}
+.ibox .showbox ul li {
+    float: left;
+    margin: 7px 13px
+}
+.ibox .showbox ul li img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #ff9600
+}
+.ibox span {
+    position: absolute;
+    padding: 2px 5px;
+    background: #fff;
+    cursor: pointer;
+}
+.ibox span.pre {
+    left: 10px;
+    bottom: 0
+}
+.ibox span.next {
+    right: 10px;
+    bottom: 0
+}
+.ibox span.num {
+    right: 45%;
+    bottom: 0;
+    background: #ddd;
+    line-height: 18px;
+}
+.ibox span.num li {
+    display: inline;
+    margin: 0 5px;
+    padding: 1px 5px;
+    line-height: 18px
+}
+.ibox span.num .numcur {
+    background: #a40000;
+    color: #fff
+}
+.wiki ul {
+    position: relative;
+    background: #fff;
+}
+.wiki ul li {
+    background: #fff;
+    width: 204px;
+    float: left;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #b33030;
+    margin-right: 10px;
+    line-height: 22px;
+}
+.wiki h3 {
+    height: 16px;
+    font-size: 20px;
+    line-height: 16px;
+    border-left: 3px solid #f60;
+    padding-left: 10px;
+    margin: 20px 0;
+}
+.wiki ul li h2 {
+    padding-top: 8px;
+}
+.m_0 {
+    margin-right: 0 !important;
+}
+.wiki ul li img {
+    width: 204px;
+    height: 155px;
+}
+.foot {
+    background: url(images/foot.gif) center 0 no-repeat;
+    height: 166px;
+}
+.footer {
+    color: #666;
+    padding-top: 100px;
+    text-align: center;
+}
+.box {
+    width: 900px;
+    margin: 0 auto;
+    overflow: auto;
+}
+.boxside {
+    width: 180px;
+    float: left;
+    margin-right: 20px;
+}
+.boxside h3 {
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px solid #b33030;
+    background: #f8f8f8;
+    padding-left: 15px;
+    font-weight: bold;
+    color: #f00;
+    margin-bottom: 15px;
+}
+.boxside ul li {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #b33030
+}
+.boxside ul li a {
+    color: #666;
+    padding-left: 15px;
+}
+.boxside ul li a:hover, .boxside ul li a.cur {
+    color: #f00;
+    font-weight: bold
+}
+.wiki {
+    min-height: 600px;
+}
+.wiki h4 {
+    font-weight: normal;
+    color: #666;
+    text-indent: 25px;
+    margin-bottom: 20px;
+    border: 1px solid #b33030;
+    background-color: #f8f8f8;
+    padding: 0 15px;
+    line-height: 26px;
+}
+.wiki h5 {
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px solid #b33030;
+    font-weight: bold;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    color: #f90;
+}
+.wiki ol li {
+    line-height: 24px;
+    text-indent: 25px;
+    color: #666;
+    margin-bottom: 15px;
+}
+.lishi {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #b33030;
+}
+.lishi h3 {
+    line-height: 26px;
+    color: #666;
+    text-indent: 25px;
+    margin-bottom: 10px;
+}
+.lishi h3 img {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+.lishi h2 {
+    background: #f8f8f8;
+    margin-bottom: 10px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+}
+.lishi h4 {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    line-height: 24px;
+    color: #666
+}
+.lishi p {
+    line-height: 26px;
+    color: #666;
+    text-indent: 25px;
+    margin-bottom: 10px;
+}
+.sever h1 {
+    height: 36px;
+    line-height: 36px;
+    margin-bottom: 8px;
+}
+.sever p {
+    line-height: 24px;
+    color: #666;
+    margin-bottom: 10px;
+}
+.sever_box {
+    border: 1px solid #b33030;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.sever_box h3 {
+    font-weight: bold;
+    height: 24px;
+    line-height: 24px;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #b33030;
+}
+.button {
+    width: 100px;
+    background: #101580;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1%;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background .3s;
+    -webkit-transition: background .3s;
+}
+.button:hover {
+    background: #2288bb;
+}
+#login {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 2%;
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+}
+#triangle {
+    width: 0;
+    border-top: 12x solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #101580;
+    border-left: 12px solid transparent;
+    margin: 0 auto;
+}
+#login h1 {
+    background: #101580;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+}
+form {
+    background: #f0f0f0;
+    padding: 6% 4%;
+}
+input[type="email"], input[type="password"] {
+    width: 92%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 4%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 95%;
+    color: #555;
+}
+input[type="submit"] {
+    width: 100%;
+    background: #101580;
+    padding: 4%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    color: #fff;
+    cursor: pointer;
+    transition: background .3s;
+    -webkit-transition: background .3s;
+    margin-bottom: 2px;
+}
+input[type="submit"]:hover {
+    background: #2288bb;
+}
+.center {
+    text-align: center;
+    width: 100%;
+}
+
+.footer li {
+    display: inline-block;
+}
+.abc {
+    width: 63%;
+    margin: auto;
+    height: 360px;
+}
+.left {
+    float: left;
+    height: inherit;
+}
+.right {
+    height: inherit;
+    margin-left: 290px;
+}
+.rightBottom{
+    margin-top: 20px;   
+}
